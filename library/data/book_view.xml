@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="book_tree_view" model="ir.ui.view">
+        <field name="name">Books</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <tree decoration-danger="is_late == True">
+                <field name="name" class="book-style"/>
+                <field name="year"/>
+                <field name="in_stock"/>
+                <field name="is_late" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="book_form_view" model="ir.ui.view">
+        <field name="name">Books</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field name="state" widget="statusbar"/>
+                    <button name="action_state_draft" attrs="{'invisible': [('state', '=', 'draft')]}" type="object" string="Draft" class="btn-primary"/>
+                    <button name="action_state_pending" attrs="{'invisible': [('state', '=', 'pending')]}" type="object" string="Pending" class="btn-secondary"/>
+                    <button name="action_state_sold" attrs="{'invisible': [('state', '!=', 'pending')]}" type="object" string="SOLD" class="btn-success"/>
+                </header>
+                <sheet>
+                    <group>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
+                        <field name="name"/>
+                        <field name="active" invisible="1"/>
+                        <field name="ref"/>
+                        <field name="assign_to"/>
+                        <field name="year" widget="integer"/>
+                        <field name="time"/>
+                        <field name="in_stock"/>
+                        <field name="expected_selling_date" attrs="{'readonly': [('state', '=', 'closed')]}"/>
+                        <field name="is_late"/>
+                        <field name="create_date"/>
+                        <field name="new_date"/>
+                    </group>
+                    <notebook>
+                        <page string="Author">
+                            <field name="author_ids" widget="many2many">
+                                <tree editable="1">
+                                    <field name="name"/>
+                                    <field name="age"/>
+                                </tree>
+                            </field>
+<!--                            <field name="author_idss">-->
+<!--                                <tree editable="1">-->
+<!--                                    <field name="name"/>-->
+<!--                                    <field name="age"/>-->
+<!--                                </tree>-->
+<!--                            </field>-->
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="book_search_view" model="ir.ui.view">
+        <field name="name">Books</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="year"/>
+
+                <filter name="filter_stock" domain="[('in_stock', '=', True)]"/>
+                <filter name="filter_stock" context="{'group_by': 'in_stock'}"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="book_action" model="ir.actions.act_window">
+        <field name="name">books</field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_close_book" model="ir.actions.server">
+        <field name="name">Close</field>
+        <field name="model_id" ref="model_library_book"/>
+        <field name="binding_model_id" ref="model_library_book"/>
+        <field name="state">code</field>
+        <field name="code">
+            action = records.action_state_closed()
+        </field>
+    </record>
+
+    <record id="action_open_book_state_wizard" model="ir.actions.server">
+        <field name="name">Book Wizard</field>
+        <field name="model_id" ref="model_library_book"/>
+        <field name="binding_model_id" ref="model_library_book"/>
+        <field name="state">code</field>
+        <field name="code">action = records.action_open_state_wizard()</field>
+    </record>
+
+    <record id="ir_cron_book_date" model="ir.cron">
+        <field name="name">Book: Check Date</field>
+        <field name="model_id" ref="model_library_book"/>
+        <field name="state">code</field>
+        <field name="code">
+            model.action_is_late()
+        </field>
+        <field name="active" eval="True"/>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+    </record>
+
+    <menuitem id="library_menu" name="Library Management"/>
+    <menuitem id="book_menu_action" name="Book" parent="library_menu" action="book_action"/>
+
+</odoo>

@@ -1,0 +1,8 @@
+<odoo>
+    <record id="book_sequence" model="ir.sequence">
+        <field name="name">Book Sequence</field>
+        <field name="code">book_sequence</field>
+        <field name="prefix">BK</field>
+        <field name="padding">5</field>
+    </record>
+</odoo>

@@ -1,0 +1,494 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* library
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-15 16:52+0000\n"
+"PO-Revision-Date: 2024-07-15 20:25+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__activity_ids
+msgid "Activities"
+msgstr "الانشطة"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_author__age
+msgid "Age"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: library
+#: model:ir.actions.act_window,name:library.author_action
+#: model:ir.model.fields,field_description:library.field_author_lines__author_id
+#: model:ir.model.fields,field_description:library.field_library_author__name
+#: model:ir.model.fields,field_description:library.field_library_book__author_ids
+#: model:ir.model.fields,field_description:library.field_library_book_history__author_ids
+#: model:ir.ui.menu,name:library.author_menu_action
+#: model_terms:ir.ui.view,arch_db:library.book_form_view
+#: model_terms:ir.ui.view,arch_db:library.book_history_form_view
+msgid "Author"
+msgstr "المؤلف"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__author_idss
+msgid "Author Idss"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_author_lines__book_id
+#: model:ir.model.fields,field_description:library.field_library_author__book_id
+#: model:ir.model.fields,field_description:library.field_library_book_history__book_id
+#: model:ir.model.fields,field_description:library.field_library_book_state__book_id
+#: model:ir.model.fields,field_description:library.field_sale_order__book_id
+#: model:ir.ui.menu,name:library.book_menu_action
+msgid "Book"
+msgstr "الكتاب"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_author__book_his_id
+msgid "Book His"
+msgstr ""
+
+#. module: library
+#: model:ir.actions.act_window,name:library.book_history_action
+#: model:ir.ui.menu,name:library.book_history_menu
+msgid "Book History"
+msgstr ""
+
+#. module: library
+#: model:ir.actions.act_window,name:library.book_wizard_action
+msgid "Book State"
+msgstr ""
+
+#. module: library
+#: model:ir.actions.server,name:library.action_open_book_state_wizard
+msgid "Book Wizard"
+msgstr ""
+
+#. module: library
+#: model:ir.actions.server,name:library.ir_cron_book_date_ir_actions_server
+#: model:ir.cron,cron_name:library.ir_cron_book_date
+msgid "Book: Check Date"
+msgstr ""
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.book_wizard_view_form
+msgid "Cancel"
+msgstr "اغلاق"
+
+#. module: library
+#: model:ir.actions.server,name:library.action_close_book
+msgid "Close"
+msgstr "اغلاق"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_book__state__closed
+msgid "Closed"
+msgstr "مغلق"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.book_wizard_view_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_author_lines__create_uid
+#: model:ir.model.fields,field_description:library.field_library_author__create_uid
+#: model:ir.model.fields,field_description:library.field_library_book__create_uid
+#: model:ir.model.fields,field_description:library.field_library_book_history__create_uid
+#: model:ir.model.fields,field_description:library.field_library_book_state__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_author_lines__create_date
+#: model:ir.model.fields,field_description:library.field_library_author__create_date
+#: model:ir.model.fields,field_description:library.field_library_book__create_date
+#: model:ir.model.fields,field_description:library.field_library_book_history__create_date
+#: model:ir.model.fields,field_description:library.field_library_book_state__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_author_lines__display_name
+#: model:ir.model.fields,field_description:library.field_library_author__display_name
+#: model:ir.model.fields,field_description:library.field_library_book__display_name
+#: model:ir.model.fields,field_description:library.field_library_book_history__display_name
+#: model:ir.model.fields,field_description:library.field_library_book_state__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_book__state__draft
+#: model:ir.model.fields.selection,name:library.selection__library_book_state__state__draft
+#: model_terms:ir.ui.view,arch_db:library.book_form_view
+msgid "Draft"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__expected_selling_date
+#: model_terms:ir.ui.view,arch_db:library.book_report_template
+msgid "Expected Selling Date"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_author_lines__id
+#: model:ir.model.fields,field_description:library.field_library_author__id
+#: model:ir.model.fields,field_description:library.field_library_book__id
+#: model:ir.model.fields,field_description:library.field_library_book_history__id
+#: model:ir.model.fields,field_description:library.field_library_book_state__id
+msgid "ID"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__message_has_error
+#: model:ir.model.fields,help:library.field_library_book__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__in_stock
+msgid "In Stock"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_author_lines____last_update
+#: model:ir.model.fields,field_description:library.field_library_author____last_update
+#: model:ir.model.fields,field_description:library.field_library_book____last_update
+#: model:ir.model.fields,field_description:library.field_library_book_history____last_update
+#: model:ir.model.fields,field_description:library.field_library_book_state____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_author_lines__write_uid
+#: model:ir.model.fields,field_description:library.field_library_author__write_uid
+#: model:ir.model.fields,field_description:library.field_library_book__write_uid
+#: model:ir.model.fields,field_description:library.field_library_book_history__write_uid
+#: model:ir.model.fields,field_description:library.field_library_book_state__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_author_lines__write_date
+#: model:ir.model.fields,field_description:library.field_library_author__write_date
+#: model:ir.model.fields,field_description:library.field_library_book__write_date
+#: model:ir.model.fields,field_description:library.field_library_book_history__write_date
+#: model:ir.model.fields,field_description:library.field_library_book_state__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__is_late
+#: model_terms:ir.ui.view,arch_db:library.book_report_template
+msgid "Late"
+msgstr ""
+
+#. module: library
+#: model:ir.ui.menu,name:library.library_menu
+msgid "Library Management"
+msgstr "المكتبة"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_author_lines__name
+#: model:ir.model.fields,field_description:library.field_library_book__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: library
+#: model:ir.model.constraint,message:library.constraint_library_book_unique_name
+msgid "Name Should be unique!"
+msgstr ""
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.book_report_template
+msgid "Name:"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__new_date
+msgid "New Date"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book_history__new_state
+msgid "New State"
+msgstr "الحالة الجديدة"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book_history__old_state
+msgid "Old State"
+msgstr "الحالة القديمة"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__assign_to
+msgid "Partner"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_book__state__pending
+#: model:ir.model.fields.selection,name:library.selection__library_book_state__state__pending
+#: model_terms:ir.ui.view,arch_db:library.book_form_view
+msgid "Pending"
+msgstr ""
+
+#. module: library
+#: model:ir.actions.report,name:library.book_report
+msgid "Print Book"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book_history__reason
+#: model:ir.model.fields,field_description:library.field_library_book_state__reason
+msgid "Reason"
+msgstr "السبب"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__ref
+msgid "Ref"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.book_form_view
+msgid "SOLD"
+msgstr "مباع"
+
+#. module: library
+#: model:ir.model,name:library.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_book__state__sold
+msgid "Sold"
+msgstr "مباع"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__state
+#: model:ir.model.fields,field_description:library.field_library_book_state__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.book_report_template
+msgid "State:"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__time
+msgid "Time"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book_history__user_id
+msgid "User"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__year
+msgid "Year"
+msgstr ""
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.book_report_template
+msgid "Year:"
+msgstr ""
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_author_lines__age
+msgid "age"
+msgstr ""
+
+#. module: library
+#: model:ir.model,name:library.model_author_lines
+msgid "author.lines"
+msgstr ""
+
+#. module: library
+#: model:ir.actions.act_window,name:library.book_action
+msgid "books"
+msgstr ""
+
+#. module: library
+#: model:ir.model,name:library.model_library_author
+msgid "library.author"
+msgstr ""
+
+#. module: library
+#: model:ir.model,name:library.model_library_book
+msgid "library.book"
+msgstr ""
+
+#. module: library
+#: model:ir.model,name:library.model_library_book_history
+msgid "library.book.history"
+msgstr ""
+
+#. module: library
+#: model:ir.model,name:library.model_library_book_state
+msgid "library.book.state"
+msgstr ""

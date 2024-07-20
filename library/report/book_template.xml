@@ -1,0 +1,45 @@
+<odoo>
+    <record id="book_report" model="ir.actions.report">
+        <field name="name">Print Book</field>
+        <field name="model">library.book</field>
+        <field name="binding_model_id" ref="model_library_book"/>
+        <field name="report_type">qweb-html</field>
+        <field name="binding_type">report</field>
+        <field name="report_name">library.book_report_template</field>
+    </record>
+
+    <template id="book_report_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <t t-foreach="docs" t-as="rec">
+                    <h3 style="font-family: 'my-font';">Name: <t t-esc="rec.name"/></h3>
+                    <h3>State: <t t-esc="rec.state"/></h3>
+                    <h3>Year: <t t-esc="rec.year"/></h3>
+                    <style>
+                        table, th, td {
+                          border: 1px solid black;
+                        }
+                        table {
+                          width: 50%;
+                          border-collapse: collapse;
+                        }
+                    </style>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Expected Selling Date</th>
+                                <th>Late</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span t-field='rec.expected_selling_date'/></td>
+                                <td><span t-field='rec.is_late'/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

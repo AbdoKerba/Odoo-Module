@@ -1,0 +1,50 @@
+<odoo>
+    <record id="book_history_action" model="ir.actions.act_window">
+        <field name="name">Book History</field>
+        <field name="res_model">library.book.history</field>
+    </record>
+
+    <menuitem id="book_history_menu" parent="library_menu" action="book_history_action"/>
+
+    <record id="book_history_form_view" model="ir.ui.view">
+        <field name="name">Book History</field>
+        <field name="model">library.book.history</field>
+        <field name="arch" type="xml">
+            <form create="0" edit="0" delete="0">
+                <sheet>
+                    <group>
+                        <field name="book_id"/>
+                        <field name="user_id"/>
+                        <field name="old_state"/>
+                        <field name="new_state"/>
+                        <field name="reason"/>
+                    </group>
+                    <notebook>
+                        <page string="Author">
+                            <field name="author_ids" widget="many2many">
+                                <tree editable="1">
+                                    <field name="name"/>
+                                    <field name="age"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="book_history_tree_view" model="ir.ui.view">
+        <field name="name">Book History</field>
+        <field name="model">library.book.history</field>
+        <field name="arch" type="xml">
+            <tree create="0" edit="0" delete="0">
+                <field name="book_id"/>
+                <field name="user_id"/>
+                <field name="old_state"/>
+                <field name="new_state"/>
+                <field name="reason"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
